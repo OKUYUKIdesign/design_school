@@ -1587,3 +1587,37 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 /* タイトルは1行に収める（文字の大きさは、テキストの列の幅に合わせる） */
 .hero-text { container-type: inline-size; }
 .hero-title { white-space: nowrap; font-size: min(3.75rem, 14cqi); line-height: 1.3; letter-spacing: 0.01em; }
+
+/* =========================================================
+   全体調整（2026/10/01）：見出しを少し大きく、余白と行間を広く
+   ========================================================= */
+:root {
+  --fs-title: 40px;   /* 大見出し（ページのタイトル） */
+  --fs-h3: 25px;      /* 中見出し（いま使われている主なAIツール など） */
+  --lh-body: 1.9;
+  --lh-sm: 1.85;
+}
+@media (max-width: 640px) {
+  :root { --fs-title: 30px; --fs-h3: 22px; }
+}
+.page-title { line-height: 1.3; }
+.lead-b { line-height: 1.75; margin-bottom: 32px; }
+.part.topic { padding-top: 56px; }
+.part > h2.sub { margin: 120px 0 28px; gap: 12px; }
+.part > h2.sub:first-of-type { margin-top: 0; }
+.part > h2.sub .sub-ic { width: 38px; height: 38px; border-radius: 12px; }
+.part > h2.sub .sub-ic svg { width: 21px; height: 21px; }
+.evo-step { padding: 48px 0; gap: 24px; }
+.evo-head { gap: 16px; }
+.evo-head h4 { margin-bottom: 6px; }
+.analogy { margin: 0 0 36px; }
+.callout { margin-top: 36px; }
+.pager2 { margin-top: 120px; }
+@media (max-width: 640px) {
+  .part > h2.sub { margin: 88px 0 22px; }
+  .part > h2.sub:first-of-type { margin-top: 0; }
+  .part > h2.sub .sub-ic { width: 34px; height: 34px; }
+  .lead-b { margin-bottom: 26px; }
+  .evo-step { padding: 40px 0; gap: 20px; }
+  .pager2 { margin-top: 88px; }
+}
