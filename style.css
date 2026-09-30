@@ -1621,3 +1621,15 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
   .evo-step { padding: 40px 0; gap: 20px; }
   .pager2 { margin-top: 88px; }
 }
+/* 年表：ブームの間を広く */
+.eras > .era + .era { margin-top: 88px; }
+.winter { margin-top: 36px; margin-bottom: 36px; padding-top: 28px; padding-bottom: 28px; }
+.era { gap: 24px; }
+.era-sum { margin-top: 10px; }
+.ev li { padding: 16px 0; }
+@media (max-width: 640px) {
+  .eras > .era + .era { margin-top: 64px; }
+  .winter { margin-top: 28px; margin-bottom: 28px; padding-top: 22px; padding-bottom: 22px; }
+  .era { gap: 20px; }
+  .ev li { padding: 14px 0; }
+}
