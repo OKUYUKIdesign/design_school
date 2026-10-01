@@ -1737,3 +1737,21 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
   .terms-tbl tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
   .terms-tbl tbody tr td:last-child { border-bottom: 0; }
 }
+/* 規約の表：答え（太字）と補足 */
+.tbl-key { font-size: var(--fs-sm); color: var(--mute); margin-bottom: 10px; }
+.tbl-key b { color: var(--ink); }
+.terms-tbl .tv { display: block; font-family: var(--round); font-weight: 700; font-size: var(--fs-body); color: var(--ink); line-height: 1.6; }
+.terms-tbl .tn { display: block; margin-top: 4px; font-size: var(--fs-sm); color: var(--mute); line-height: var(--lh-sm); }
+.gloss { margin: 14px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 20px; background: var(--cream); border-radius: var(--r-m); padding: 16px 20px; }
+.gloss > div { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.gloss dt { font-family: var(--round); font-weight: 700; font-size: var(--fs-sm); }
+.gloss dd { margin: 0; font-size: var(--fs-sm); line-height: var(--lh-sm); color: var(--mute); }
+.gloss + .note { margin-top: 12px; }
+@media (max-width: 640px) {
+  .gloss { grid-template-columns: minmax(0, 1fr); padding: 14px 16px; }
+  .gloss > div { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+.terms-tbl { table-layout: fixed; }
+.terms-tbl th { word-break: normal; overflow-wrap: anywhere; line-height: 1.6; }
+.terms-tbl thead th:first-child, .terms-tbl tbody th { width: 11.5rem; }
+@media (max-width: 640px) { .terms-tbl { table-layout: auto; } .terms-tbl tbody th { width: auto; } }
