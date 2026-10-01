@@ -1755,3 +1755,5 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .terms-tbl th { word-break: normal; overflow-wrap: anywhere; line-height: 1.6; }
 .terms-tbl thead th:first-child, .terms-tbl tbody th { width: 11.5rem; }
 @media (max-width: 640px) { .terms-tbl { table-layout: auto; } .terms-tbl tbody th { width: auto; } }
+.point-list li b { display: inline; font-size: inherit; }
+.ptext + .kfacts { margin-top: 20px; }

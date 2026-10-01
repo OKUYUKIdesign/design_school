@@ -46,6 +46,7 @@
 <symbol id="i-cat-parts" viewBox="36 -14 346 270"><path d="M155.486,111.05c-8.683,0-15.734,7.052-15.734,15.727c0,8.69,7.052,15.734,15.734,15.734 s15.72-7.044,15.72-15.734C171.206,118.101,164.169,111.05,155.486,111.05z" fill="currentColor"/><path d="M276.395,126.776c0-8.675-7.044-15.727-15.734-15.727c-8.682,0-15.728,7.052-15.728,15.727 c0,8.69,7.045,15.734,15.728,15.734C269.351,142.511,276.395,135.466,276.395,126.776z" fill="currentColor"/><polygon points="272.209,42.238 258.943,59.935 281.057,64.352" fill="currentColor"/><polygon points="143.93,42.238 135.082,64.352 157.203,59.935" fill="currentColor"/><path d="M242.4,203.637c-4.475,1.076-8.257,1.523-11.404,1.523c-4.171,0-7.196-0.78-9.455-1.913 c-3.349-1.71-5.298-4.273-6.64-7.578c-1.299-3.27-1.776-7.196-1.776-10.732c0-2.216,0.195-4.165,0.39-5.788l9.382-9.376 c1.732-1.718,2.245-4.323,1.314-6.582c-0.938-2.252-3.14-3.717-5.572-3.717h-21.132c-2.498,0-4.736,1.53-5.623,3.868 c-0.902,2.331-0.267,4.958,1.581,6.64l9.022,8.17c0.259,1.74,0.519,4.107,0.519,6.799c0.022,4.721-0.866,10.098-3.335,13.779 c-1.256,1.862-2.814,3.37-5.081,4.518c-2.252,1.133-5.269,1.913-9.44,1.913c-3.147,0-6.929-0.447-11.404-1.53 c-2.425-0.57-4.879,0.931-5.456,3.356c-0.57,2.425,0.931,4.879,3.363,5.464c5.024,1.191,9.484,1.754,13.497,1.761 c5.298,0,9.802-1.018,13.526-2.887c4.359-2.187,7.405-5.529,9.448-9.16l0.801,1.56c1.992,3.009,4.836,5.731,8.545,7.6 c3.724,1.869,8.236,2.887,13.526,2.887c4.006,0,8.474-0.57,13.505-1.768c2.432-0.592,3.926-3.032,3.341-5.457 C247.265,204.561,244.825,203.059,242.4,203.637z" fill="currentColor"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v4.5l3 2"/></symbol>
     <symbol id="i-box" viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
   </defs>
 </svg>
 
@@ -177,6 +178,16 @@
       </div>
       <p class="callout"><b>ここがまだ決まっていない</b>どこからが「創作的寄与」かは、最終的には一つずつの状況で判断されます。前のページの「Sai」の裁判は、まさにこの点が争われています。</p>
 
+      <!-- 入力するとき -->
+      <h2 class="sub"><span class="sub-ic" aria-hidden="true"><svg><use href="#i-lock"/></svg></span>AIに入れるとき：著作権以外の決まり</h2>
+      <p class="ptext">ここまでは、AIで<b>作ったものを使う</b>ときの話でした。仕事では、AIに<b>何かを入れる</b>ときにも気をつける決まりがあります。</p>
+      <ul class="kfacts">
+        <li><b>クライアントとの約束（秘密保持契約）</b><p>仕事では「預かった情報をほかに出さない」と約束していることがよくあります。AIに入れると、その情報は外の会社のサーバーに渡ります。学習に使われない設定でも、契約の書き方によっては約束を破ることになります。</p></li>
+        <li><b>個人情報</b><p>名前、顔写真、連絡先など。仕事で預かった個人情報を本人の同意なく入れて、それがAIの学習などに使われると、個人情報保護法に違反する可能性があります（個人情報保護委員会、2023年）。</p></li>
+        <li><b>会社の秘密（営業秘密）</b><p>発表前の商品や社内の資料など。学習に使われるツールに入れると、法律で守られる「秘密」として扱われなくなるおそれがあります。</p></li>
+      </ul>
+      <div class="point point-list"><span class="sub-ic" aria-hidden="true"><svg><use href="#i-alert"/></svg></span><div><b>迷ったら</b><ul><li>クライアントの情報は、<b>許可なくAIに入れない</b></li><li>入れていいと言われたら、次のページの「学習に使われるか」も確認する</li></ul></div></div>
+
       <!-- 関係する決まり -->
       <h2 class="sub"><span class="sub-ic" aria-hidden="true"><svg><use href="#i-law"/></svg></span>関係する決まり</h2>
       <div class="rules3">
@@ -192,6 +203,8 @@
           <li><a href="https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94057901_01.pdf" target="_blank" rel="noopener">AIと著作権に関する考え方について【概要】（PDF）</a><span class="src">文化庁</span></li>
           <li><a href="https://www.bunka.go.jp/seisaku/chosakuken/pdf/94097701_01.pdf" target="_blank" rel="noopener">AIと著作権に関するチェックリスト＆ガイダンス（PDF）</a><span class="src">文化庁 2024年7月</span></li>
           <li><a href="https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html" target="_blank" rel="noopener">AIと著作権について</a><span class="src">文化庁</span></li>
+          <li><a href="https://www.ppc.go.jp/news/press/2023/230602kouhou/" target="_blank" rel="noopener">生成AIサービスの利用に関する注意喚起等について</a><span class="src">個人情報保護委員会 2023年6月</span></li>
+          <li><a href="https://businessandlaw.jp/articles/a20260409-1/" target="_blank" rel="noopener">生成AIへの個人情報・営業秘密・機密情報の入力</a><span class="src">田中浩之 弁護士（Business &amp; Law）2026年9月更新</span></li>
           <li><a href="https://www8.cao.go.jp/cstp/ai/ai_act/ai_act.html" target="_blank" rel="noopener">人工知能関連技術の研究開発及び活用の推進に関する法律（AI法）</a><span class="src">内閣府</span></li>
         </ul>
       </details>
