@@ -1794,3 +1794,7 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
   .sai-shots { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .sai-imgs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+.today-msg { font-family: var(--round); font-weight: 700; font-size: 1.5rem; line-height: 1.75; max-width: 27em; }
+.today-msg b { color: var(--red-text); }
+@media (max-width: 640px) { .today-msg { font-size: 1.1875rem; } }
+.nw { white-space: nowrap; }
