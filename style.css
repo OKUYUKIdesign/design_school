@@ -1784,3 +1784,13 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
   .fork-ways::before, .fork-ways::after { display: none; }
   .fork-q { font-size: var(--fs-body); }
 }
+.sai-shots { margin: 4px 0 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: end; background: var(--cream); border-radius: var(--r-l); padding: 16px; }
+.sai-imgs { display: grid; grid-template-columns: repeat(2, 150px); gap: 10px; }
+.sai-imgs img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; }
+.sai-shots figcaption { display: grid; gap: 6px; font-size: var(--fs-sm); line-height: 1.75; color: var(--ink); }
+.sai-shots figcaption b { font-family: var(--round); font-size: var(--fs-body); }
+.sai-src { color: var(--mute); font-size: 0.75rem; }
+@media (max-width: 640px) {
+  .sai-shots { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .sai-imgs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
