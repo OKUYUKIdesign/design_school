@@ -1797,3 +1797,22 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .today-msg { font-size: var(--fs-card); line-height: 1.9; max-width: 36em; }
 .today-msg b { color: var(--red-text); }
 .nw { white-space: nowrap; }
+
+/* 文化庁の引用とチェックリスト */
+.quote { margin: 20px 0; padding: 18px 22px; border-left: 4px solid var(--red); background: var(--cream); border-radius: 0 var(--r-m) var(--r-m) 0; display: grid; gap: 8px; max-width: 44em; }
+.quote p { font-size: var(--fs-body); line-height: var(--lh-body); }
+.quote cite { font-style: normal; font-size: var(--fs-sm); color: var(--mute); }
+.quote cite a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.ptext + .quote + .ptext { margin-bottom: 20px; }
+.chk { margin-top: 24px; border: 1px solid var(--rule); border-radius: var(--r-l); padding: 20px 22px; display: grid; gap: 12px; }
+.chk-h { display: flex; align-items: center; gap: 10px; }
+.chk-h b { font-family: var(--round); font-size: var(--fs-card); }
+.chk-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.chk-list li { position: relative; padding-left: 1.9em; font-size: var(--fs-body); line-height: 1.8; }
+.chk-list li::before { content: ""; position: absolute; left: 0; top: .32em; width: 1.15em; height: 1.15em; border: 2px solid var(--red); border-radius: 5px; background: var(--paper); }
+.chk-list li::after { content: ""; position: absolute; left: .4em; top: .45em; width: .32em; height: .6em; border: solid var(--red); border-width: 0 2px 2px 0; transform: rotate(40deg); }
+.chk-link { display: grid; gap: 2px; background: var(--cream); border-radius: var(--r-m); padding: 12px 16px; text-decoration: none; color: var(--ink); font-weight: 700; }
+.chk-link span:first-child { text-decoration: underline; text-underline-offset: 3px; }
+.chk-link .src { font-weight: 400; font-size: 0.75rem; color: var(--mute); }
+.chk-link:hover { background: var(--red-tint); }
+.chk-link-solo { margin-top: 14px; max-width: 44em; }
