@@ -1816,3 +1816,19 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .chk-link .src { font-weight: 400; font-size: 0.75rem; color: var(--mute); }
 .chk-link:hover { background: var(--red-tint); }
 .chk-link-solo { margin-top: 14px; max-width: 44em; }
+
+/* 自分の作品と認められるか：2列で比べる */
+.judge2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+.judge2 > div { border-radius: var(--r-l); padding: 20px 22px; display: grid; gap: 12px; align-content: start; }
+.j-yes { background: var(--red-tint); }
+.j-no { background: var(--cream); }
+.j-h { display: flex; align-items: center; gap: 10px; font-family: var(--round); font-weight: 700; font-size: var(--fs-card); line-height: 1.5; }
+.j-mark { flex: none; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--paper); display: grid; place-items: center; font-size: 1rem; line-height: 1; }
+.j-yes .j-mark { color: var(--red-text); }
+.j-no .j-mark { color: var(--mute); }
+.judge2 ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.judge2 li { position: relative; padding-left: 1.1em; font-size: var(--fs-body); line-height: 1.8; }
+.judge2 li::before { content: ""; position: absolute; left: 0; top: .75em; width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+.j-no li::before { background: var(--faint); }
+.judge2 + .callout { margin-top: 20px; }
+@media (max-width: 640px) { .judge2 { grid-template-columns: minmax(0, 1fr); } }
