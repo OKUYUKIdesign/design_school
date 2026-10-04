@@ -1855,3 +1855,4 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .fixes.from6 { counter-reset: fx 5; }
 .ptext + .fixes { margin-top: 16px; }
 .chk-link-solo + .callout { margin-top: 20px; }
+.parts2 + .note { margin-top: 14px; } .chk-link-solo + .note { margin-top: 14px; }
