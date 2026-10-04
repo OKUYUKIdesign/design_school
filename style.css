@@ -1859,3 +1859,4 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .sai-link { margin-top: 4px; }
 .hero-title { font-size: min(3.25rem, 10.4cqi); line-height: 1.35; }
 .toc-overview + .toc-lesson { margin-top: 14px; }
+.about3 p { color: var(--ink); }
