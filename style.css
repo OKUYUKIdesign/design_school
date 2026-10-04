@@ -1832,3 +1832,14 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .j-no li::before { background: var(--faint); }
 .judge2 + .callout { margin-top: 20px; }
 @media (max-width: 640px) { .judge2 { grid-template-columns: minmax(0, 1fr); } }
+
+/* 著作物の3つの条件 */
+.is3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.is3 > div { border: 1px solid var(--rule); border-radius: var(--r-l); padding: 18px 18px 16px; display: grid; gap: 8px; align-content: start; }
+.is3-n { width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--red-tint); color: var(--red-text); display: grid; place-items: center; font-weight: 700; font-size: 0.875rem; }
+.is3 b { font-family: var(--round); font-size: var(--fs-card); line-height: 1.5; }
+.is3 p { font-size: var(--fs-sm); line-height: 1.7; color: var(--mute); border-top: 1px dashed var(--rule); padding-top: 8px; }
+.is3-x { display: block; font-size: 0.6875rem; font-weight: 700; color: var(--faint); }
+.is3 + .note { margin-top: 16px; }
+.quote + .ptext { margin-top: 0; }
+@media (max-width: 640px) { .is3 { grid-template-columns: minmax(0, 1fr); } }
