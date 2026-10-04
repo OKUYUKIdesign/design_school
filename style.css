@@ -1852,3 +1852,5 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .parts2 .j-mark { font-size: 0.875rem; font-weight: 700; }
 .report3 + .chk-link-solo { margin-top: 16px; }
 @media (max-width: 640px) { .link-row { grid-template-columns: minmax(0, 1fr); } }
+.fixes.from6 { counter-reset: fx 5; }
+.ptext + .fixes { margin-top: 16px; }
