@@ -1857,3 +1857,4 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .chk-link-solo + .callout { margin-top: 20px; }
 .parts2 + .note { margin-top: 14px; } .chk-link-solo + .note { margin-top: 14px; }
 .sai-link { margin-top: 4px; }
+.hero-title { font-size: min(3.25rem, 10.4cqi); line-height: 1.35; }
