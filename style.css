@@ -1870,3 +1870,27 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
   .cases-list .warn { margin-top: -26px; }
   .cases-list + .point { margin-top: 40px; }
 }
+
+/* 04：指示の文の箱、要素の一覧 */
+.promptbox { background: var(--cream); border-radius: var(--r-l); padding: 16px 20px 18px; display: grid; gap: 6px; border-left: 4px solid var(--rule); }
+.promptbox.on { background: var(--red-tint); border-left-color: var(--red); }
+.promptbox.extra { margin-top: 20px; }
+.pb-k { font-size: 0.75rem; font-weight: 700; color: var(--mute); }
+.promptbox.on .pb-k { color: var(--red-text); }
+.promptbox p { font-family: var(--round); font-weight: 700; font-size: var(--fs-card); line-height: 1.7; }
+.pb-pair { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 12px; align-items: stretch; }
+.el-list { margin: 16px 0 0; display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.el-list > div { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+.el-list dt { display: flex; align-items: center; gap: 10px; font-family: var(--round); font-weight: 700; font-size: var(--fs-body); }
+.el-n { flex: none; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--red-tint); color: var(--red-text); display: grid; place-items: center; font-size: 0.8125rem; }
+.el-list dd { margin: 0; display: grid; gap: 2px; }
+.el-list dd b { font-size: var(--fs-body); }
+.el-list dd span { font-size: var(--fs-sm); color: var(--mute); }
+.todo.todo3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ptext + .habits, .ptext + .promptbox, .ptext + .el-list { margin-top: 16px; }
+.habits + .callout { margin-top: 20px; }
+@media (max-width: 640px) {
+  .pb-pair { grid-template-columns: minmax(0, 1fr); }
+  .el-list > div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .todo.todo3 { grid-template-columns: minmax(0, 1fr); }
+}
