@@ -1860,3 +1860,13 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .hero-title { font-size: min(3.25rem, 10.4cqi); line-height: 1.35; }
 .toc-overview + .toc-lesson { margin-top: 14px; }
 .about3 p { color: var(--ink); }
+
+/* 判例：カードどうしの間を広く */
+.cases-list { gap: 56px; }
+.cases-list .warn { margin-top: -40px; }
+.cases-list + .point { margin-top: 56px; }
+@media (max-width: 640px) {
+  .cases-list { gap: 40px; }
+  .cases-list .warn { margin-top: -26px; }
+  .cases-list + .point { margin-top: 40px; }
+}
