@@ -1894,3 +1894,13 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
   .el-list > div { grid-template-columns: minmax(0, 1fr); gap: 6px; }
   .todo.todo3 { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* 04：お題の画像 */
+.target { margin: 16px 0 0; display: grid; gap: 8px; }
+.target img, .target-ph { display: block; width: 100%; max-width: 640px; height: auto; aspect-ratio: 4 / 3; border-radius: var(--r-l); object-fit: cover; }
+.target-ph { display: grid; place-items: center; background: var(--cream); border: 2px dashed var(--rule); color: var(--mute); font-weight: 700; font-size: var(--fs-sm); }
+.target figcaption { font-size: var(--fs-sm); font-weight: 700; color: var(--mute); }
+.target + .note { margin-top: 16px; }
+.note + .fixes { margin-top: 16px; }
+.fixes + .callout { margin-top: 20px; }
+.target-h { font-family: var(--round); font-size: var(--fs-body); font-weight: 700; margin: 40px 0 0; }
