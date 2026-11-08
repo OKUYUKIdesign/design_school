@@ -1904,3 +1904,16 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .note + .fixes { margin-top: 16px; }
 .fixes + .callout { margin-top: 20px; }
 .target-h { font-family: var(--round); font-size: var(--fs-body); font-weight: 700; margin: 40px 0 0; }
+
+/* 05：4枚並べる図 */
+.fig4 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; margin-top: 16px; }
+.fig4 .target { margin: 0; }
+.fig4 .target img, .fig4 .target-ph { max-width: none; }
+.fig4 figcaption { font-weight: 500; line-height: 1.6; }
+.fig4 figcaption b { color: var(--red-text); }
+.ptext + .fig4 { margin-top: 16px; }
+.promptbox + .ptext { margin-top: 16px; }
+.kfacts + .ptext { margin-top: 20px; }
+.ptext + .pb-pair { margin-top: 16px; }
+.el-list + .callout { margin-top: 20px; }
+@media (max-width: 640px) { .fig4 { gap: 16px 12px; } }
