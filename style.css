@@ -1917,3 +1917,6 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .ptext + .pb-pair { margin-top: 16px; }
 .el-list + .callout { margin-top: 20px; }
 @media (max-width: 640px) { .fig4 { gap: 16px 12px; } }
+.fig4 .target img { aspect-ratio: auto; object-fit: contain; }
+.promptbox + .fig4 { margin-top: 16px; }
+@media (max-width: 640px) { .fig4 { grid-template-columns: minmax(0, 1fr); } }
