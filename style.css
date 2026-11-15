@@ -1920,3 +1920,15 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .fig4 .target img { aspect-ratio: auto; object-fit: contain; }
 .promptbox + .fig4 { margin-top: 16px; }
 @media (max-width: 640px) { .fig4 { grid-template-columns: minmax(0, 1fr); } }
+
+/* 06：3枚並べる図、課題例 */
+.fig3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+.fig3 .target { margin: 0; }
+.fig3 .target img, .fig3 .target-ph { max-width: none; }
+.fig3 .target img { aspect-ratio: auto; object-fit: contain; }
+.fig3 figcaption { font-weight: 500; line-height: 1.6; }
+.fig3 + .callout { margin-top: 20px; }
+.ex3 { display: grid; gap: 12px; margin-top: 16px; }
+.judge2 > div > p:not(.j-h) { font-size: var(--fs-body); line-height: 1.8; }
+.judge2 + .note { margin-top: 16px; }
+@media (max-width: 640px) { .fig3 { grid-template-columns: minmax(0, 1fr); } }
