@@ -1933,3 +1933,10 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .judge2 + .note { margin-top: 16px; }
 @media (max-width: 640px) { .fig3 { grid-template-columns: minmax(0, 1fr); } }
 .fig3 .target-ph { aspect-ratio: 3 / 4; }
+
+/* 06：2枚並べる図 */
+.fig2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; max-width: 640px; }
+.fig2 .target { margin: 0; }
+.fig2 .target img { max-width: none; aspect-ratio: auto; object-fit: contain; }
+.fig2 figcaption { font-weight: 500; line-height: 1.6; }
+.fig2 + .callout { margin-top: 20px; }
