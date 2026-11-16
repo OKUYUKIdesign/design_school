@@ -1940,3 +1940,20 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .fig2 .target img { max-width: none; aspect-ratio: auto; object-fit: contain; }
 .fig2 figcaption { font-weight: 500; line-height: 1.6; }
 .fig2 + .callout { margin-top: 20px; }
+
+/* 07：最後にまとめる1ページの図、進め方 */
+.board3 { margin: 16px 0 0; display: grid; gap: 10px; }
+.b3-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 24px; background: var(--cream); border-radius: var(--r-l); max-width: 560px; }
+.b3-cover { aspect-ratio: 1 / 1.42; border-radius: 6px; border: 2px dashed var(--rule); background: var(--paper); display: grid; place-items: center; font-size: var(--fs-sm); font-weight: 700; color: var(--mute); text-align: center; padding: 6px; }
+.b3-cover.on { border-color: var(--red); color: var(--red-text); }
+.board3 figcaption { font-size: var(--fs-sm); color: var(--mute); }
+.ptext + .board3 { margin-top: 16px; }
+.el-list.sched > div { grid-template-columns: 9rem minmax(0, 1fr); align-items: center; }
+.el-list.sched dt { gap: 6px; }
+.el-list.sched .el-n { width: 2.1rem; height: 2.1rem; }
+@media (max-width: 640px) {
+  .b3-row { gap: 10px; padding: 14px; }
+  .el-list.sched > div { grid-template-columns: 8rem minmax(0, 1fr); gap: 12px; }
+}
+.kfacts + .note { margin-top: 16px; }
+.el-list.sched > div { grid-template-columns: 8rem minmax(0, 1fr); }
