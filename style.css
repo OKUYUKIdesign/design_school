@@ -1932,3 +1932,4 @@ a.form-cta:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0
 .judge2 > div > p:not(.j-h) { font-size: var(--fs-body); line-height: 1.8; }
 .judge2 + .note { margin-top: 16px; }
 @media (max-width: 640px) { .fig3 { grid-template-columns: minmax(0, 1fr); } }
+.fig3 .target-ph { aspect-ratio: 3 / 4; }
